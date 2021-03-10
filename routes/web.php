@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\Support\Facades\Route;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,7 +19,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Auth::routes();
+
 
 Route::middleware('auth')->group(function(){
     Route::get('/tweet', 'TweetController@index')->name('home');
@@ -27,4 +29,4 @@ Route::middleware('auth')->group(function(){
 
 Route::get('/profiles/{user}', 'ProfilesController@show')->name('profile');
 
-//Route::get('/home', 'HomeController@index')->name('home');
+Auth::routes();
