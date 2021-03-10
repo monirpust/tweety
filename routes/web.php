@@ -25,4 +25,6 @@ Route::middleware('auth')->group(function(){
 
 });
 
+Route::get('/profiles/{user}', 'ProfilesController@show')->name('profile');
+
 //Route::get('/home', 'HomeController@index')->name('home');
