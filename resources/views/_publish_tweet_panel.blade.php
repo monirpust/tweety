@@ -7,7 +7,7 @@
 
             <footer class="flex justify-between">
                 <img src="{{auth()->user()->avatar}}" alt="your avatar" class="rounded-full mr-2" height="40px" width="40px">
-                <button type="submit" class="bg-blue-500 rounded-lg shadow py-2 px-2 text-white">tweet now</button>
+                <button type="submit" class="bg-blue-500 rounded-lg shadow py-2 px-2 text-white">publish</button>
             </footer>
 
         </form>
